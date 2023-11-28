@@ -5,27 +5,27 @@ export default {
     data() {
         return {
             logos: [{
-                image: "",
+                image: "public/img/buy-comics-digital-comics.png",
                 link: "#DIGITALCOMICS",
                 name: "DIGITAL COMICS"
             },
             {
-                image: "",
+                image: "public/img/buy-comics-merchandise.png",
                 link: "#DCMERCH",
                 name: "DC MERCHANDISE"
             },
             {
-                image: "",
+                image: "public/img/buy-comics-subscriptions.png",
                 link: "#SUBSCRIPTION",
                 name: "SUBSCRIPTION"
             },
             {
-                image: "",
+                image: "public/img/buy-comics-shop-locator.png",
                 link: "#COMICSHOPLOCATOR",
                 name: "COMIC SHOP LOCATOR"
             },
             {
-                image: "",
+                image: "public/img/buy-dc-power-visa.svg",
                 link: "#DCPOWERVISA",
                 name: "DC POWER VISA"
             },
@@ -37,8 +37,10 @@ export default {
 
 <template>
     <div id="Merchbluecontainer">
-        <img v-for="logo in logos" src="{{ logo.image }}" alt="merchimage">
-        <a v-for="logo in logos" href="{{ logo.link }}">{{ logo.name }}</a>
+        <div v-for="logo in logos">
+            <img :src="logo.image" alt="merchimage">
+            <a href="{{ logo.link }}">{{ logo.name }}</a>
+        </div>
     </div>
 </template>
 
@@ -47,7 +49,18 @@ export default {
     background-color: rgb(10, 129, 209);
     width: 100%;
     height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
+
+#Merchbluecontainer img {
+    width: 25%;
+}
+
+#Merchbluecontainer {}
+
 
 span {
     font-weight: bold;
