@@ -11,7 +11,7 @@
 nav {
     background-color: black;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
 }
 
 span {

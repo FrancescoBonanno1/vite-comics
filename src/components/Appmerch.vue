@@ -48,7 +48,7 @@ export default {
 #Merchbluecontainer {
     background-color: rgb(10, 129, 209);
     width: 100%;
-    height: 25vh;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,7 +59,10 @@ export default {
     width: 25%;
 }
 
-#Merchbluecontainer {}
+#Merchbluecontainer a {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+}
 
 
 span {
