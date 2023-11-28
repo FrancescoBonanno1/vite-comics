@@ -62,7 +62,7 @@
 <style scoped>
 main {
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
