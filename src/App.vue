@@ -1,10 +1,12 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import Appcontent from './components/Appcontent.vue'
+import Appmerch from './components/Appmerch.vue'
 export default {
   components: {
     AppHeader,
-    Appcontent
+    Appcontent,
+    Appmerch
   }
 }
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
   <AppHeader />
   <Appcontent />
+  <Appmerch />
 </template>
 
 <style scoped></style>
