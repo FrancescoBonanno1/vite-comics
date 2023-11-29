@@ -17,13 +17,13 @@ export default {
 
 <style scoped>
 nav {
-    background-color: black;
+    background-color: rgb(165, 161, 161);
     width: 100%;
     height: 10vh;
 }
 
 #comicbox {
-    width: 15%;
+    width: 40%;
     height: 10%;
 }
 

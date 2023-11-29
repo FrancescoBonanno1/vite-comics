@@ -20,6 +20,7 @@ export default {
 <template>
   <AppHeader />
   <Appjumbo />
+  <Appcomics />
   <Appcontent />
   <Appmerch />
   <Appmain />
