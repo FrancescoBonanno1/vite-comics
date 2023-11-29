@@ -84,8 +84,12 @@ export default {
 </script>
 
 <template>
+    <Appcontent :fumetti="comics" />
     <nav id="contentcontainer">
-        <span> "Content Goes Here!" </span>
+        <div v-for="fumetto in fumetti" id="comicbox">
+            <img :src="fumetto.thumb" alt="immfumetto">
+            <p>{{ fumetto.price }}</p>
+        </div>
     </nav>
 </template>
 
@@ -96,10 +100,13 @@ nav {
     height: 10vh;
 }
 
-span {
+#comicbox {
+    width: 15%;
+    height: 10%;
+}
+
+p {
     font-weight: bold;
     color: aliceblue;
-    font-size: 2rem;
-    text-align: center;
 }
 </style>

@@ -20,7 +20,7 @@ export default {
 <template>
   <AppHeader />
   <Appjumbo />
-  <Appcontent :fumetti="comics" />
+  <Appcontent />
   <Appmerch />
   <Appmain />
 </template>
