@@ -3,9 +3,11 @@ import AppHeader from './components/AppHeader.vue'
 import Appcontent from './components/Appcontent.vue'
 import Appmerch from './components/Appmerch.vue'
 import Appmain from './components/Appmain.vue'
+import Appjumbo from './components/Appjumbo.vue'
 export default {
   components: {
     AppHeader,
+    Appjumbo,
     Appcontent,
     Appmerch,
     Appmain
@@ -15,9 +17,14 @@ export default {
 
 <template>
   <AppHeader />
+  <Appjumbo />
   <Appcontent />
   <Appmerch />
   <Appmain />
 </template>
 
-<style scoped></style>
+<style scoped>
+body {
+  overflow-y: auto;
+}
+</style>
