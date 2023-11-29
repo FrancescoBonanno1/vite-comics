@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: "Appcontent",
+    name: "Appcomics",
     props: ["fumetti"],
     data() {
         return {
@@ -84,22 +84,10 @@ export default {
 </script>
 
 <template>
-    <nav id="contentcontainer">
-        <span> "Content Goes Here!" </span>
-    </nav>
+    <div v-for="comic in comics">
+        <img :src="comic.thumb" alt="fumetto">
+        <p>{{ comic.series }}</p>
+    </div>
 </template>
 
-<style scoped>
-nav {
-    background-color: black;
-    width: 100%;
-    height: 10vh;
-}
-
-span {
-    font-weight: bold;
-    color: aliceblue;
-    font-size: 2rem;
-    text-align: center;
-}
-</style>
+<style scoped></style>

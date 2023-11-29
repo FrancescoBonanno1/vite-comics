@@ -1,7 +1,6 @@
 
 <script>
 export default {
-    name: "AppHeader",
     data() {
         return {
             logos: [{
@@ -29,7 +28,8 @@ export default {
                 link: "#DCPOWERVISA",
                 name: "DC POWER VISA"
             },
-            ]
+            ],
+
         }
     }
 }
