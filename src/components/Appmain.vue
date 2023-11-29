@@ -4,7 +4,7 @@
 <template>
     <main>
         <div id="optionscontainer">
-            <div>
+            <div class="linkcontainer">
                 <h2>DC COMICS</h2>
                 <a href="#HEHE">CHARACTERS</a>
                 <a href="#HEHE">COMICS</a>
@@ -14,12 +14,12 @@
                 <a href="#HEHE">VIDEOS</a>
                 <a href="#HEHE">NEWS</a>
             </div>
-            <div>
+            <div class="linkcontainer">
                 <h2>SHOP</h2>
                 <a href="#HEHE">SHOP DC</a>
                 <a href="#HEHE">SHOP DC COLLECTIBLES</a>
             </div>
-            <div>
+            <div class="linkcontainer">
                 <h2>DC</h2>
                 <a href="#HEHE">CHARACTERS</a>
                 <a href="#HEHE">COMICS</a>
@@ -34,7 +34,7 @@
                 <a href="#HEHE">VIDEOS</a>
                 <a href="#HEHE">NEWS</a>
             </div>
-            <div>
+            <div class="linkcontainer">
                 <h2>SITES</h2>
                 <a href="#HEHE">CHARACTERS</a>
                 <a href="#HEHE">COMICS</a>
@@ -47,7 +47,7 @@
     </main>
 
     <footer>
-        <button>SIGN-UP NOW!</button>
+        <button id="hover">SIGN-UP NOW!</button>
         <div>
             <h2>FOLLOW US</h2>
             <img src="public\img\footer-facebook.png" alt="facebook">
@@ -67,7 +67,20 @@ main {
     justify-content: space-around;
     align-items: center;
     background-image: url(/boolean/vite-comics/public/img/footer-bg.jpg);
+    background-size: cover;
     object-fit: contain;
+}
+
+main h2 {
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+main a {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    font-weight: bolder;
+    margin-right: 0%;
 }
 
 #optionscontainer {
@@ -75,6 +88,12 @@ main {
     height: 50vh;
     display: flex;
     flex-wrap: wrap;
+}
+
+.linkcontainer {
+    display: flex;
+    margin: 2%;
+    flex-direction: column;
 }
 
 main img {
@@ -96,8 +115,12 @@ footer img {
     margin: 0.5rem
 }
 
+footer img:hover {
+    cursor: pointer;
+}
+
 footer h2 {
-    color: rgb(5, 117, 223))
+    color: rgb(5, 117, 223)
 }
 
 footer div {
@@ -114,5 +137,9 @@ footer button {
     color: aliceblue;
     font-weight: bold;
     border: 2px solid rgb(5, 157, 245);
+}
+
+#hover:hover {
+    cursor: pointer;
 }
 </style>

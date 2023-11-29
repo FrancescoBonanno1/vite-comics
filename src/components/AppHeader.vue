@@ -51,8 +51,9 @@ export default {
 <template>
     <header>
         <img src="public\img\favicon.ico" alt="logo dc">
-        <div id="link container">
+        <div id="linkcontainer">
             <a v-for="links in headerlinks" href="{{ links.link }}">{{ links.name }}</a>
+            <!--<span v-for="bars in headerlinks"></span>-->
         </div>
     </header>
 </template>
@@ -71,6 +72,12 @@ header a {
     margin: 1%;
     color: rgb(54, 156, 245);
     text-decoration: none;
+}
+
+header span {
+    width: 15%;
+    height: 25%;
+    background-color: rgb(0, 162, 255);
 }
 
 header img {

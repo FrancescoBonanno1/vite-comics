@@ -57,6 +57,11 @@ export default {
 
 #Merchbluecontainer img {
     width: 25%;
+
+}
+
+#Merchbluecontainer img:hover {
+    cursor: pointer;
 }
 
 #Merchbluecontainer a {
