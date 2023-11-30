@@ -1,34 +1,39 @@
 <script>
 export default {
     name: "Appcomics",
-    props: ["fumetti"]
+    props: ["dati"]
 }
 
 </script>
 
 <template>
-    <nav id="contentcontainer">
-        <div v-for="fumetto in fumetti" id="comicbox">
-            <img :src="fumetto.thumb" alt="immfumetto">
-            <p>{{ fumetto.price }}</p>
+    <div id="comicsdisplay">
+        <div id="comicbox">
+            <img :src="dati.thumb" alt="immfumetto">
+            <p>{{ dati.series }}</p>
         </div>
-    </nav>
+    </div>
 </template>
 
 <style scoped>
-nav {
+#comicsdisplay {
     background-color: rgb(165, 161, 161);
     width: 100%;
-    height: 10vh;
+    height: 30vh;
+    display: flex;
 }
 
 #comicbox {
-    width: 40%;
+    width: 20%;
     height: 10%;
+}
+
+#comicbox img {
+    width: 10%;
 }
 
 p {
     font-weight: bold;
-    color: aliceblue;
+    color: rgb(13, 13, 14);
 }
 </style>

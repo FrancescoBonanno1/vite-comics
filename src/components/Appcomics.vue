@@ -1,8 +1,18 @@
 <script>
+import Appcontent from './Appcontent.vue'
+
 export default {
+    components: {
+        Appcontent
+
+    },
     name: "Appcomics",
     data() {
         return {
+            inEvidenza: {
+                thumb: "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
+                price: "$19.99",
+            },
             comics: [
                 {
                     thumb: "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
@@ -83,7 +93,7 @@ export default {
 </script>
 
 <template>
-    <Appcontent :fumetti="comics" />
+    <Appcontent :dati="fumetto" v-for="fumetto in comics" />
 </template>
 
 <style scoped></style>

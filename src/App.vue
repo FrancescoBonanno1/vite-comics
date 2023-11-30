@@ -1,6 +1,5 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
-import Appcontent from './components/Appcontent.vue'
 import Appmerch from './components/Appmerch.vue'
 import Appmain from './components/Appmain.vue'
 import Appjumbo from './components/Appjumbo.vue'
@@ -10,7 +9,6 @@ export default {
     AppHeader,
     Appjumbo,
     Appcomics,
-    Appcontent,
     Appmerch,
     Appmain
   }
@@ -21,7 +19,6 @@ export default {
   <AppHeader />
   <Appjumbo />
   <Appcomics />
-  <Appcontent />
   <Appmerch />
   <Appmain />
 </template>
